@@ -1,0 +1,26 @@
+.header-container{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccc;
+background-color: aliceblue;
+}
+.header-container > h1{
+    margin: 0px 0px 0px 40px;
+    cursor: pointer;
+}
+.icon-box{
+height: 60px;
+width:60px;
+position: absolute;
+right:40px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
