@@ -1,0 +1,14 @@
+.footer-container{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cccc;
+background-color: aliceblue;
+position: fixed;
+bottom: 0px;
+}
+.footer-container > h1{
+    margin: 0px 0px 0px 0px;
+}

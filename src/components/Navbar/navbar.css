@@ -1,0 +1,27 @@
+.navbar-container{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar-ul{
+list-style: none;
+display:flex ;
+gap: 20px;
+}
+.navbar-li > a{
+    color: black;
+    font-weight:bolder;
+    font-size: 20px;
+    list-style: none;
+    display:flex ;
+    gap: 10px;
+    text-decoration: none;
+    padding: 8px;
+}
+.navbar-li>a:hover{
+    background-color: #ccc;
+    border-radius: 3px;
+}
