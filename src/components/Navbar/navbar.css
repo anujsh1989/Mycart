@@ -1,10 +1,14 @@
 .navbar-container{
-    height: 50px;
+    height: 40px;
     width: 100vw;
     display: flex;
+    background-color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    top:40px;
+    z-index: 999;
 }
 .navbar-ul{
 list-style: none;

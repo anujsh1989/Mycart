@@ -1,5 +1,5 @@
 .footer-container{
-    height: 50px;
+    height: 40px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -9,6 +9,6 @@ background-color: aliceblue;
 position: fixed;
 bottom: 0px;
 }
-.footer-container > h1{
+.footer-container > h2{
     margin: 0px 0px 0px 0px;
 }

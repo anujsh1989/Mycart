@@ -1,12 +1,23 @@
 .header-container{
-    height: 50px;
+    height: 40px;
     width: 100vw;
     display: flex;
     align-items: center;
     border: 1px solid #cccc;
 background-color: aliceblue;
+position: fixed;
+top: 0px;
+z-index: 999;
 }
-.header-container > h1{
+.header-logo-box{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.header-logo-box > h1{
     margin: 0px 0px 0px 40px;
     cursor: pointer;
 }

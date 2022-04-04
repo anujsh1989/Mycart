@@ -15,7 +15,6 @@
     background-color: aliceblue;
     border-radius: 3px;
     margin-left: 0px;
-    /* margin-top: 5px; */
 }
 .img-wrapper{
     height: 100px;
@@ -34,14 +33,15 @@
 }
 .item-title{
     height: 100px;
-    width: 400px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .item-price{
     height: 100px;
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,4 +62,10 @@ background-color:bisque;
 }
 .btn-text{
     margin: 0px 10px 0px 10px;
+}
+.content-wrapper{
+    height:580px;
+    display: block;
+    flex-direction: column;
+    margin-top: 80px;
 }
