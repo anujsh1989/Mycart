@@ -8,7 +8,7 @@ export default function Header() {
     const navigate = useNavigate;
     return (
         <div className="header-container" >
-            <div className="header-logo-box"  onClick={(e)=>{navigate(RouteNames.HOME)}} >
+            <div className="header-logo-box"  onClick={(e)=>{navigate(RouteNames.LOGIN)}} >
             <h1>FakeStore</h1>
             </div>
             <div className="icon-box">
