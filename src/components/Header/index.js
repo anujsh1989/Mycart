@@ -1,14 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import RouteNames from "../../router/routenames";
 import "./header.css";
 
 
 export default function Header() {
-    const navigate = useNavigate;
+    // const navigate = useNavigate();
     return (
         <div className="header-container" >
-            <div className="header-logo-box"  onClick={(e)=>{navigate(RouteNames.LOGIN)}} >
+            <div className="header-logo-box">
             <h1>FakeStore</h1>
             </div>
             <div className="icon-box">

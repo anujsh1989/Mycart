@@ -1,0 +1,23 @@
+.input{
+margin-top: 5px;
+width: 250px;
+height: 30px;
+}
+.label{
+margin-top: 10px;
+}
+.textfield-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
+.input-error{
+    border: 1px solid red;
+    border-radius: 2px;
+    margin-top: 5px;
+width: 250px;
+height: 30px;
+}
