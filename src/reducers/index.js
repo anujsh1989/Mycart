@@ -1,6 +1,9 @@
 import { combineReducers } from "redux";
 import cartData from "./reducers";
+import openCloseDrawer from "./openCloseDrawer"
 
-export default combineReducers({
-    cart
+const rootReducer =  combineReducers({
+    cartData,openCloseDrawer
 });
+
+export default rootReducer;

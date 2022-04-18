@@ -11,3 +11,15 @@ export const removeFromCart = (data) => {
         data: data
     }
 }
+export const closeDrawer = () =>{
+    return{
+        type:"Close_Drawer"
+    }
+}
+
+export const openDrawer = () =>{
+    return{
+        type:"Open_Drawer"
+    }
+}
+

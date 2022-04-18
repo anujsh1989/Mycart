@@ -59,7 +59,7 @@ export default function Signup() {
                 label="Confirm Password"
                 name="confirmPassword"
                 type="password "
-              />
+              /> 
               <label>Notes</label>
               <FormField name="text" as="textarea"></FormField>
               <br></br>

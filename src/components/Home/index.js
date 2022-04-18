@@ -6,21 +6,30 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { Drawer } from "@mui/material";
 import "./home.css";
+import { useSelector, useDispatch } from "react-redux";
+import { closeDrawer } from "../../actions/actions";
 
 export default function Home() {
   const [category, setCategory] = useState("");
   const handleChange = (event) => {
     setCategory(event.target.value);
   };
+  const mystate = useSelector((state) => state.openCloseDrawer);
+  const dispatch = useDispatch();
+  // const [openDrawer, setOpenDrawer] = useState(false);
+  // const onClose = () => {
+  //   setOpenDrawer(false);
+  // };
 
   const [cartdata, setCartData] = useState();
   //  const path = window.location.href.split("/").pop();
 
   useEffect(() => {
     let url = "https://fakestoreapi.com/products";
-    if (category.length > 0 && category!=='all') {
-        url = `${url}/category/${category}`
+    if (category.length > 0 && category !== "all") {
+      url = `${url}/category/${category}`;
     }
 
     axios
@@ -69,6 +78,26 @@ export default function Home() {
               <div className="btn">
                 <h3 className="btn-text">Add To Cart</h3>
               </div>
+              <Drawer className="drawer" anchor="right" open={mystate}>
+                <div className="drawer-container">
+                  <div
+                    className="close-drawer"
+                    onClick={() => dispatch(closeDrawer())}
+                  >
+                    <h3>X</h3>
+                  </div >
+                  <div className="cart-title" >
+                  <h1>Cart</h1>
+                  </div>
+                  <div className="cart-item-wrapper" >
+<h1>test</h1>
+                  </div>
+                  <div className="cart-footer" > 
+                  <h3>SubTotal:</h3>
+                  <h3>$</h3>
+                  </div>
+                </div>
+              </Drawer>
             </div>
           );
         })}

@@ -1,0 +1,12 @@
+.cart-container{
+    height: 650px;
+    width: 350px;
+    position: fixed;
+    right: 0px;
+    top: 43px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
