@@ -10,12 +10,16 @@ import { Drawer } from "@mui/material";
 import "./home.css";
 import { useSelector, useDispatch } from "react-redux";
 import { closeDrawer } from "../../actions/actions";
+import { useNavigate } from "react-router-dom";
+import RouteNames from "../../router/routenames";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [category, setCategory] = useState("");
   const handleChange = (event) => {
     setCategory(event.target.value);
   };
+  const navigate = useNavigate();
   const mystate = useSelector((state) => state.openCloseDrawer);
   const dispatch = useDispatch();
   // const [openDrawer, setOpenDrawer] = useState(false);
@@ -66,6 +70,7 @@ export default function Home() {
         {cartdata?.map((item) => {
           return (
             <div key={item.id} className="wrapper">
+              <Link to={`/Selecteditem/${item.id}`}  className="link-wrapper" >
               <div className="img-wrapper">
                 <img className="img" src={item.image} alt="Item-Img" />
               </div>
@@ -78,6 +83,7 @@ export default function Home() {
               <div className="btn">
                 <h3 className="btn-text">Add To Cart</h3>
               </div>
+              </Link>
               <Drawer className="drawer" anchor="right" open={mystate}>
                 <div className="drawer-container">
                   <div

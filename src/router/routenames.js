@@ -1,8 +1,8 @@
 const RouteNames = {
     HOME : "/",
     LOGIN :"/Login",
-    SIGNUP : "/Signup"
-
+    SIGNUP : "/Signup",
+    SELECTED_ITEM:"/Selecteditem/:id"
 }
 
 export default RouteNames;
